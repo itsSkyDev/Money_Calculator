@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "FinCalcApp",
+    "name": "Money Calculator",
     "slug": "FinCalcApp",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -11,10 +11,8 @@
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
+        "backgroundColor": "#FFFFFF",
+        "foregroundImage": "./assets/icon.png"
       },
       "package": "com.itsskydev.FinCalcApp"
     },
