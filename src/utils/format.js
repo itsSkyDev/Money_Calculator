@@ -1,0 +1,3 @@
+export const num = value => { const n = Number.parseFloat(String(value ?? '').replace(/,/g, '').trim()); return Number.isFinite(n) ? n : 0; };
+export const inr = value => { if (!Number.isFinite(value)) return '₹0'; const negative = value < 0; const digits = String(Math.round(Math.abs(value))); let out = digits.slice(-3); const rest = digits.slice(0, -3); if (rest) out = rest.replace(/\B(?=(\d{2})+(?!\d))/g, ',') + ',' + out; return `${negative ? '-' : ''}₹${out}`; };
+ 
